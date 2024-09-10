@@ -33,7 +33,7 @@ var pJS = function (tag_id, params) {
                 type: 'circle',
                 stroke: {
                     width: 0,
-                    color: '#ff0000'
+                    color: '#11fff7'
                 },
                 polygon: {
                     nb_sides: 5
@@ -597,6 +597,9 @@ var pJS = function (tag_id, params) {
             if (isInArray('repulse', pJS.interactivity.events.onhover.mode) || isInArray('repulse', pJS.interactivity.events.onclick.mode)) {
                 pJS.fn.modes.repulseParticle(p);
             }
+
+
+
 
             /* interaction auto between particles */
             if (pJS.particles.line_linked.enable || pJS.particles.move.attract.enable) {

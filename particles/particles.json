@@ -56,10 +56,10 @@
       "enable": true,
       "speed": 2,
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
-      "out_mode": "out",
-      "bounce": false,
+      "out_mode": "bounce",
+      "bounce": true,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -72,31 +72,31 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
-        "enable": false,
-        "mode": "push"
+        "enable": true,
+        "mode": "repulse"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 755.2447552447553,
+        "distance": 280,
         "line_linked": {
-          "opacity": 0
+          "opacity": 1
         }
       },
       "bubble": {
-        "distance": 287.7122877122877,
-        "size": 287.7122877122877,
-        "duration": 0.959040959040959,
-        "opacity": 0,
-        "speed": 3
+        "distance": 100,
+        "size": 10,
+        "duration": 0.2,
+        "opacity": 0.3,
+        "speed": 1
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 800,
+        "duration": 0.1
       },
       "push": {
         "particles_nb": 4
