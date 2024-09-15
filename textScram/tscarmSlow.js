@@ -1,11 +1,11 @@
 // ——————————————————————————————————————————————————
-// TextScramble (Original), Credits: Justin Windle https://codepen.io/soulwire/pen/mEMPrK
+// TextScramble, Credits: Justin Windle https://codepen.io/soulwire/pen/mEMPrK
 // ——————————————————————————————————————————————————
 
 class TextScramble {
     constructor(el) {
         this.el = el
-        this.chars = '!<>-_\\/[]{}—=+*^?#________'
+        this.chars = ' '
         this.update = this.update.bind(this)
     }
     setText(newText) {
@@ -13,11 +13,13 @@ class TextScramble {
         const length = Math.max(oldText.length, newText.length)
         const promise = new Promise((resolve) => this.resolve = resolve)
         this.queue = []
+        let num = 30;
         for (let i = 0; i < length; i++) {
             const from = oldText[i] || ''
             const to = newText[i] || ''
-            const start = Math.floor(Math.random() * 40)
-            const end = start + Math.floor(Math.random() * 40)
+            const start = 20 + Math.floor(Math.random() * 40)
+            const end = num
+            num+=5
             this.queue.push({ from, to, start, end })
         }
         cancelAnimationFrame(this.frameRequest)
@@ -85,7 +87,7 @@ const next = () => {
 
 
     fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 5000)
+        setTimeout(next, 7000)
     })
 }
 
