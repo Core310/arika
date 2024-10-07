@@ -67,8 +67,6 @@ const phrases = [
     'Hello!',
     'Hi',
     'Glad you\'re here!',
-
-
 ]
 
 const el = document.querySelector('.text')
