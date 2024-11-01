@@ -2,6 +2,8 @@
 // TextScramble, Credits: Justin Windle https://codepen.io/soulwire/pen/mEMPrK
 // ——————————————————————————————————————————————————
 
+
+
 class TextScramble {
     constructor(el) {
         this.el = el
@@ -13,13 +15,33 @@ class TextScramble {
         const length = Math.max(oldText.length, newText.length)
         const promise = new Promise((resolve) => this.resolve = resolve)
         this.queue = []
-        let num = 30;
+        let num = 0;
         for (let i = 0; i < length; i++) {
             const from = oldText[i] || ''
             const to = newText[i] || ''
             const start = 20 + Math.floor(Math.random() * 40)
             const end = num
-            num+=5
+            num+=5 //this is the speed
+            this.queue.push({ from, to, start, end })
+        }
+        cancelAnimationFrame(this.frameRequest)
+        this.frame = 0
+        this.update()
+        return promise
+    }
+
+    setFastText(newText) {
+        const oldText = this.el.innerText
+        const length = Math.max(oldText.length, newText.length)
+        const promise = new Promise((resolve) => this.resolve = resolve)
+        this.queue = []
+        let num = 0;
+        for (let i = 0; i < length; i++) {
+            const from = oldText[i] || ''
+            const to = newText[i] || ''
+            const start = 20 + Math.floor(Math.random() * 40)
+            const end = num
+            num += .09 //this is the speed
             this.queue.push({ from, to, start, end })
         }
         cancelAnimationFrame(this.frameRequest)
@@ -62,31 +84,42 @@ class TextScramble {
 // Example
 // ——————————————————————————————————————————————————
 
-const phrases = [
+const introPhrases = [
     'Welcome!',
     'Hello!',
     'Hi',
     'Glad you\'re here!',
 ]
 
-const el = document.querySelector('.text')
-const fx = new TextScramble(el)
-let counter = Math.random() * phrases.length | 0
+const bodPhrases = "I'm Arika Khor, a full stack developer based in Norman Oklahoma who likes to manipulate data. <br>I normally work with Java and C#, and like to dabble some web development frameworks like React and Spring.\n"
+
+const bod = document.querySelector('.body')
+const fx_bod = new TextScramble(bod)
+
+const intro = document.querySelector('.intro')
+const fx_intro = new TextScramble(intro)
+
+
+let counter = Math.random() * introPhrases.length | 0
 let prev = counter
 let prevCounter =0
 
 const next = () => {
-    let tmp = Math.random() * phrases.length | 0;
+    let tmp = Math.random() * introPhrases.length | 0;
     while (tmp === counter || tmp === prev)
-        tmp = Math.random() * phrases.length | 0;
+        tmp = Math.random() * introPhrases.length | 0;
 
     counter = tmp
     prevCounter === 2 ? (prevCounter = 0, prev = counter) : ++prevCounter
 
 
-    fx.setText(phrases[counter]).then(() => {
+    fx_bod.setText(introPhrases[counter]).then(() => {
         setTimeout(next, 7000)
     })
 }
+
+fx_intro.setFastText(bodPhrases).then(() => {
+    setTimeout(next, 999999)
+})
 
 next()
