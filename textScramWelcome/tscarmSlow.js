@@ -91,7 +91,10 @@ const introPhrases = [
     'Glad you\'re here!',
 ]
 
-const bodPhrases = "I'm Arika Khor, a full stack developer based in Norman Oklahoma who likes to manipulate data. <br>I normally work with Java and C#, and like to dabble some web development frameworks like React and Spring.\n"
+const bodPhrases = "I'm Arika Khor, a full stack developer studying Computer Science at University of Oklahoma." +
+    " <br>I normally work with Java and C, dabbling in some web " +
+    "development." +
+    "<br>Currently, I'm in Sooner Competitive Robotics, focusing on webprotocals, Docker, and Computer Vision."
 
 const bod = document.querySelector('.body')
 const fx_bod = new TextScramble(bod)
