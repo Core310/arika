@@ -1,11 +1,5 @@
 /*TODO Something here is causing the info div to be blocking everything else, how to fix? (Basically I want particles to track thru this div, globally */
 
-#particles {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 #intro {
   position: absolute;
   left: 0;
