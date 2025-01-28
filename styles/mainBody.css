@@ -1,58 +1,4 @@
-/*Something here is causing the info div to be blocking everything else, how to fix? */
-
-
-*{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 55;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* particleground demo */
-
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  background: #050000;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  line-height: 1.3;
-  -webkit-font-smoothing: antialiased;
-}
+/*TODO Something here is causing the info div to be blocking everything else, how to fix? (Basically I want particles to track thru this div, globally */
 
 #particles {
   width: 100%;
@@ -86,8 +32,6 @@ h2 {
   filter: alpha(opacity=20);
   color: #e2e6e8
 }
-
-
 .section-title:after {
   content: '.'
 }
@@ -106,46 +50,4 @@ p {
   -webkit-columns: 3 auto;
   -moz-columns: 3 auto;
   columns: 3 auto
-}
-
-@media only screen and (max-width: 1000px) {
-  h1 {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 100px) {
-  h1 {
-    font-size: 15px;
-  }
-  h1::after {
-    height: 8px;
-  }
-}
-
-@media only screen and (max-width: 100px) {
-  #intro {
-    padding: 0 10px;
-  }
-  h1 {
-    font-size: 15px;
-  }
-  h1::after {
-    height: 6px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .btn {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 100px) {
-  h1 {
-    font-size: 15px;
-  }
-  h1::after {
-    height: 4px;
-  }
 }

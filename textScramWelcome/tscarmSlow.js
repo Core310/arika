@@ -87,8 +87,9 @@ class TextScramble {
 const introPhrases = [
     'Welcome!',
     'Hello!',
-    'Hi',
+    'Olà\n',
     'Glad you\'re here!',
+    'Suilië',
 ]
 
 const bodPhrases = "I'm Arika, a full stack developer studying Computer Science at University of Oklahoma." +
