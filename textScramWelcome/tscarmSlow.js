@@ -95,7 +95,7 @@ const introPhrases = [
 const bodPhrases = "I'm Arika, a full stack developer studying Computer Science at University of Oklahoma." +
     " <br>I normally work with Java and C, dabbling in some web " +
     "development." +
-    "<br>Currently, I'm in Sooner Competitive Robotics, focusing on Webprotocals, Docker, and Computer Vision."
+    "<br>Currently, I'm in Sooner Competitive Robotics, focusing on Webprotocals, Docker, and Computer Vision."/* TODO how to get this to not overflow?*/
 
 const bod = document.querySelector('.body')
 const fx_bod = new TextScramble(bod)
