@@ -1,7 +1,19 @@
 /*TODO Needs to be like #info particles lay below the footer but still render*/
 
 .typer-component {
-    display: inline-block
+    -webkit-transition: opacity .3s cubic-bezier(.23,1,.32,1);
+    transition: opacity .3s cubic-bezier(.23,1,.32,1);
+    text-decoration: none;
+    opacity: .6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=66)";
+    filter: alpha(opacity=66);
+    color: #e2e6e8
+}
+
+.typer-component .social .link:hover{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    filter: alpha(opacity=75)
 }
 
 .footer-component .social .link:hover {
