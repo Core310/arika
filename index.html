@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div id="particles-js">
 
-</div>
 
 <div id="application" class="application-component">
     <div class="container">
@@ -42,8 +40,18 @@
 
 </div>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7F6K1TLJC1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7F6K1TLJC1');
+</script>
 
 <!-- particles.js container -->
+<div id="particles-js"></div>
 <!--Particles.js has issues with edge (maybe all). The footer isn't loading particles anymore, not sure why.. (Went pretty far back and it was like this the whole time.-->
 
 <!-- Particles scripts -->
