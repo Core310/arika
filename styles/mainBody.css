@@ -1,6 +1,6 @@
 /*TODO Something here is causing the info div to be blocking everything else, how to fix? (Basically I want particles to track thru this div, globally */
 
-#intro {
+#aboutSection {
   position: absolute;
   left: 0;
   top: 45%;
@@ -52,7 +52,8 @@ p {
 
 
 /*
-Main container*/
+Main container
+*/
 
 
 #application .container,.application-component .container {
@@ -82,4 +83,23 @@ Main container*/
     padding: 24px 16px;
     margin: auto;
     width: 100%
+}
+
+/*About section component (doesn't include */
+
+.about-component {
+    position: relative;
+    word-wrap: break-word;
+    line-height: 1.7;
+    font-size: 14px;
+    margin: 40px 0 32px
+}
+
+.about-component .section-title {
+    top: 4px
+}
+
+.about-component .typer-component {
+    white-space: nowrap;
+    display: block!important
 }

@@ -56,7 +56,7 @@ body {
 }
 
 @media only screen and (max-width: 100px) {
-    #intro {
+    #aboutSection {
         padding: 0 10px;
     }
 
