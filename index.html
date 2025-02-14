@@ -7,31 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="container">
-    <div class="wrapper">
-        <div class="content">
-        <div id="aboutSection">
-            <h2 class="WelcomeText"></h2>
-            <h3 class="section-title">Info:</h3>
-            <div class="introBody"></div>
-        </div>
-        </div>
-    </div>
+<div id="particles-js">
+
 </div>
 
-<footer id="footer" class="footer-component" style="position: fixed; bottom: 10px; right: 20px;">
-    <!-- todo, need this to interact with particle container -->
-    <div class="social typer-component">
-        <a class="link" href="res/Arika_Khor_résumé.pdf" target="_blank">Résumé</a>
-        <a class="link" href="https://github.com/Core310" target="_blank">Github</a>
-        <a class="link" href="https://www.linkedin.com/in/arikakhor/" target="_blank">Linkedin</a>
+<div id="application" class="application-component">
+    <div class="container">
+        <div class="wrapper">
+            <section id="greeting" class="greeting-component">
+                <h2 class="WelcomeText"></h2>
+
+            </section>
+            <section id="about" class="about-component">
+                <h3 class="section-title typer-component">Info</h3>
+                <div class="introBody content"></div>
+            </section>
+
+            <section id="menu" class="menu-component">
+
+            </section>
+        </div>
     </div>
-    <aside class="status typer-component" style="position: fixed; bottom: 10px; left: 20px;">Email: arikak@ou.edu
-    </aside> <!-- do fix this! Should use seperate text property -->
-</footer>
+
+    <footer id="footer" class="footer-component" style="position: fixed; bottom: 10px; right: 20px;">
+        <!-- todo, need this to interact with particle container -->
+        <div class="social typer-component">
+            <a class="link" href="res/Arika_Khor_résumé.pdf" target="_blank">Résumé</a>
+            <a class="link" href="https://github.com/Core310" target="_blank">Github</a>
+            <a class="link" href="https://www.linkedin.com/in/arikakhor/" target="_blank">Linkedin</a>
+        </div>
+        <aside class="status typer-component" style="position: fixed; bottom: 10px; left: 20px;">Email: arikak@ou.edu
+        </aside>
+    </footer>
+
+</div>
+
 
 <!-- particles.js container -->
-<div id="particles-js"></div>
+<!--Particles.js has issues with edge (maybe all). The footer isn't loading particles anymore, not sure why.. (Went pretty far back and it was like this the whole time.-->
 
 <!-- Particles scripts -->
 <script src="particles/particles.js"></script>
