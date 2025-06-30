@@ -84,6 +84,15 @@ Main container
     width: 100%
 }
 
+#application,.application-component {
+    font-weight: 300;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0
+}
+
 /*About section component (doesn't include */
 
 .about-component {
@@ -101,4 +110,22 @@ Main container
 .about-component .typer-component {
     white-space: nowrap;
     display: block!important
+}
+
+/*unused to delete below*/
+
+.menu-component .projects .link .title:after {
+    -webkit-transition: all .5s cubic-bezier(.175,.885,.32,1.275);
+    transition: all .5s cubic-bezier(.175,.885,.32,1.275);
+    -webkit-transform: translate(calc(-100% - 8px));
+    transform: translate(calc(-100% - 8px));
+    -webkit-transform: translate3d(calc(-100% - 8px),0,0);
+    transform: translate3d(calc(-100% - 8px),0,0);
+    background: #262626;
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    height: 1px;
+    width: 24px;
+    left: 0
 }
