@@ -92,9 +92,9 @@ const introPhrases = [
     'Suilië',
 ]
 
-const bodPhrases = "I'm Arika, a Robotics Researcher at The University of Oklahoma." +
-    " Currently working on 3d tomographic path planning on UGVs." +
-    " Affiliated with Sooner Competitive Robotics (treasurer), and Construction Innovation and Analytics Lab (reseacher)."/* TODO how to get this to not overflow?*/
+const bodPhrases = "I'm Arika, a Robotics Researcher at The University of Oklahoma and am" +
+    " currently working on 3d tomographic path planning on UGVs" +
+    " at the Construction Innovation and Analytics Lab and Sooner Competitive Robotics Team." /*TODO how to get this to not overflow?*!*/
 
 const bod = document.querySelector('.WelcomeText')
 const fx_bod = new TextScramble(bod)
@@ -107,7 +107,7 @@ let counter = Math.random() * introPhrases.length | 0
 let prev = counter
 let prevCounter =0
 
-const next = () => {
+const next = () => {/*todo get introPhrases to load then bodPhrases so its a consitant flow (on action trigger)*/
     let tmp = Math.random() * introPhrases.length | 0;
     while (tmp === counter || tmp === prev)
         tmp = Math.random() * introPhrases.length | 0;
