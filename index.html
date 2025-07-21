@@ -4,29 +4,30 @@
     <meta charset="utf-8">
     <title>Arika Khor</title>
     <link href="styles/combined.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 </head>
 <body>
 
-
+<!--
+TODO refactor this in
+https://chatgpt.com/share/68671f16-dca8-800a-beed-cbec952f1b3b
+-->
 <div id="application" class="application-component">
     <div class="container">
         <div class="wrapper">
             <section id="greeting" class="greeting-component">
                 <h2 class="WelcomeText"></h2>
-
             </section>
             <section id="about" class="about-component">
-                <h3 class="section-title typer-component">Info</h3>
+                <h3 class="section-title typer-component">Info</h3><!--The issue is that this becomes below the upper div, and is hecne "Hidden" once out of
+                 sight resulting in it being on the page but invisible (oh no~) -->
                 <div class="introBody content"></div>
             </section>
-
             <section id="menu" class="menu-component">
 
             </section>
         </div>
     </div>
-
     <footer id="footer" class="footer-component" style="position: fixed; bottom: 10px; right: 20px;">
         <!-- todo, need this to interact with particle container -->
         <div class="social typer-component">
@@ -37,8 +38,8 @@
         <aside class="status typer-component" style="position: fixed; bottom: 10px; left: 20px;">Email: arikak@ou.edu
         </aside>
     </footer>
-
 </div>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7F6K1TLJC1"></script>
@@ -49,7 +50,6 @@
 
   gtag('config', 'G-7F6K1TLJC1');
 </script>
-
 <!-- particles.js container -->
 <div id="particles-js"></div>
 <!--Particles.js has issues with edge (maybe all). The footer isn't loading particles anymore, not sure why.. (Went pretty far back and it was like this the whole time.-->
