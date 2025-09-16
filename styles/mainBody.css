@@ -129,3 +129,41 @@ Main container
     width: 24px;
     left: 0
 }
+
+
+
+
+
+.labs {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.label {
+  color: #666;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 40px;
+}
+
+.lab {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.lab:hover {
+  color: #ff6;
+}
+
+.index {
+  color: #777;
+  margin-right: 8px;
+}
