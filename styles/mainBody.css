@@ -1,53 +1,54 @@
 /*TODO Something here is causing the info div to be blocking everything else, how to fix? (Basically I want particles to track thru this div, globally */
 
 #aboutSection {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  padding: 0 10px;
-  width: 100%;
-  text-align: center;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
 }
 
 h2 {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 120;
-  color: #ffffff;
-  letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 120;
+    color: #ffffff;
+    letter-spacing: 0.05em;
 }
 
-
 .section-title {
-  text-transform: uppercase;
-  letter-spacing: .15em;
-  font-size: 10px;
-  opacity: .2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-  filter: alpha(opacity=20);
-  color: #e2e6e8
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 10px;
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    color: #e2e6e8
 }
 
 .section-title:after {
-  content: '.'
-} /*Unused!*/
+    content: '.'
+}
+
+/*Unused!*/
 
 p {
-  margin: 0 0 30px 0;
-  font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Project menu parts*/
 
 .menu-component .projects {
-  -webkit-column-gap: 24px;
-  -moz-column-gap: 24px;
-  column-gap: 24px;
-  font-size: 13px;
-  -webkit-columns: 3 auto;
-  -moz-columns: 3 auto;
-  columns: 3 auto
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+    font-size: 13px;
+    -webkit-columns: 3 auto;
+    -moz-columns: 3 auto;
+    columns: 3 auto
 }
 
 
@@ -56,7 +57,7 @@ Main container
 */
 
 
-#application .container,.application-component .container {
+#application .container, .application-component .container {
     -webkit-overflow-scrolling: touch;
     -webkit-box-pack: center;
     -o-box-pack: center;
@@ -77,14 +78,14 @@ Main container
     top: 60px
 }
 
-#application .container .wrapper,.application-component .container .wrapper {
+#application .container .wrapper, .application-component .container .wrapper {
     max-width: 720px;
     padding: 24px 16px;
     margin: auto;
     width: 100%
 }
 
-#application,.application-component {
+#application, .application-component {
     font-weight: 300;
     position: absolute;
     height: 100%;
@@ -109,18 +110,27 @@ Main container
 
 .about-component .typer-component {
     white-space: nowrap;
-    display: block!important
+    display: block !important
+}
+.about.typer-component {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 0.9rem;
+  color: #777;
+  letter-spacing: 0.05em;
+  user-select: none;
 }
 
 /*unused to delete below*/
 
 .menu-component .projects .link .title:after {
-    -webkit-transition: all .5s cubic-bezier(.175,.885,.32,1.275);
-    transition: all .5s cubic-bezier(.175,.885,.32,1.275);
+    -webkit-transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
+    transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
     -webkit-transform: translate(calc(-100% - 8px));
     transform: translate(calc(-100% - 8px));
-    -webkit-transform: translate3d(calc(-100% - 8px),0,0);
-    transform: translate3d(calc(-100% - 8px),0,0);
+    -webkit-transform: translate3d(calc(-100% - 8px), 0, 0);
+    transform: translate3d(calc(-100% - 8px), 0, 0);
     background: #262626;
     position: absolute;
     content: '';
@@ -130,40 +140,42 @@ Main container
     left: 0
 }
 
-
-
-
-
 .labs {
-  max-width: 800px;
-  margin: 0 auto;
+    align-content: center;
+    align-items: flex-end;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .label {
-  color: #666;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 20px;
+    color: #666;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 7px;
 }
 
+/*Lab grid stuff.. todo (i should split this into a diff file later*/
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px 40px;
+  column-count: 2;       /* how many columns you want */
+  column-gap: 40px;      /* spacing between columns */
+
 }
 
 .lab {
-  font-size: 0.95rem;
-  color: #f0f0f0;
-  transition: color 0.2s;
-  cursor: pointer;
+    font-size: 0.95rem;
+    color: #f0f0f0;
+    transition: color 0.2s;
+    cursor: pointer;
 }
 
 .lab:hover {
-  color: #ff6;
+    color: #ff6;
 }
 
 .index {
-  color: #777;
-  margin-right: 8px;
+    color: #777;
+    margin-right: 8px;
+}
+.break {
+  break-before: column;
 }
