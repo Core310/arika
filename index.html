@@ -1,11 +1,17 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
 <head>
+    <link rel="icon" type="image/png" href="/res/img.png"/>
     <meta charset="utf-8">
     <title>Arika Khor</title>
     <link href="styles/combined.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 </head>
+
+<header>
+    <aside class="about typer-component">v1.0.0</aside>
+</header>
 <body>
 
 <!--
@@ -18,42 +24,65 @@ https://chatgpt.com/share/68671f16-dca8-800a-beed-cbec952f1b3b
             <section id="greeting" class="greeting-component">
                 <h2 class="WelcomeText"></h2>
             </section>
+
             <section id="about" class="about-component">
-                <h3 class="section-title typer-component">Info</h3><!--The issue is that this becomes below the upper div, and is hecne "Hidden" once out of
+                <h3 class="section-title typer-component">Info</h3><!--fixme The issue is that this becomes below the upper div, and is hecne "Hidden" once out of
                  sight resulting in it being on the page but invisible (oh no~) -->
                 <div class="introBody content"></div>
             </section>
             <section id="menu" class="menu-component">
-
             </section>
-        </div>
-        <section class="labs">
-    <div class="label">LABS.</div>
-    <div class="grid">
-      <div class="lab"><span class="index">000</span> Primordial Soup</div>
-      <div class="lab"><span class="index">001</span> Tensor Field</div>
-      <div class="lab"><span class="index">002</span> Neuro Synth</div>
-      <div class="lab"><span class="index">003</span> Recursion Toy</div>
-      <div class="lab"><span class="index">004</span> Magic Beans</div>
-      <div class="lab"><span class="index">005</span> Kinetic Canvas</div>
-      <div class="lab"><span class="index">006</span> Math for Motion</div>
-      <div class="lab"><span class="index">007</span> Tentacles</div>
-      <div class="lab"><span class="index">008</span> Organis.ms</div>
-      <div class="lab"><span class="index">009</span> Make Our Mark</div>/
-      <div class="lab"><span class="index">010</span> Unwrapageddon</div>
-      <div class="lab"><span class="index">011</span> Muscular Hydrostats</div>
-      <div class="lab"><span class="index">012</span> Plasmatic Isosurface</div>
-      <div class="lab"><span class="index">013</span> Mushroom Coral</div>
-      <div class="lab"><span class="index">014</span> Moon Lander</div>
-      <div class="lab"><span class="index">015</span> Smack My Glitch Up</div>
-      <div class="lab"><span class="index">016</span> Crystallization</div>
-      <div class="lab"><span class="index">017</span> WebGL GPU Particles</div>
-      <div class="lab"><span class="index">018</span> Coffee Physics</div>
-      <div class="lab"><span class="index">019</span> Show Me Your Bits</div>
-      <div class="lab"><span class="index">020</span> Fold Scroll</div>
-    </div>
-  </section>
 
+            <section class="labs">
+
+                <div class="grid">
+                     <div class="label">Current Affiliations</div>
+
+                    <div class="lab" data-url="https://ou.edu/scr/">
+                        <span class="index">000</span> SCR
+                    </div>
+                    <div class="lab" data-url="https://airou.cs.ou.edu/airou/">
+                        <span class="index">001</span> AIROU
+                    </div>
+                    <div class="lab" data-url="https://architecture.ou.edu/directory/asare/">
+                        <span class="index">002</span> CinnaLab
+                    </div>
+                    <div class="break"></div>
+
+                     <div class="label">Projects</div>
+
+                    <div class="lab" data-url="https://github.com/Core310/ffxivAPITest">
+                        <span class="index">000</span>
+                        FFXIV-Wiki-Fetcher
+                    </div>
+
+                    <div class="lab" data-url="https://github.com/SquidwardWzRd/HACK">
+                        <span class="index">001</span>
+                        Card Swiper
+                    </div>
+
+                    <div class="lab" data-url="https://github.com/Core310/Weather-Radio-Antenna">
+                        <span class="index">002</span>
+                        Weather-Radio-Antenna
+                    </div>
+
+                    <div class="lab" data-url="https://github.com/SoonerRobotics/autonav_software_2025/tree/main/display">
+                    <span class="index">006</span>
+                        SCR 2025 UI
+                    </div>
+
+                    <!--
+                    https://github.com/SoonerRobotics/autonav_software_2025
+                    -->
+                    <!--
+                    <div class="lab">
+                        <span class="index" data-url="">005</span> stub
+                    </div>
+                    -->
+                </div>
+            </section>
+
+        </div>
     </div>
     <footer id="footer" class="footer-component" style="position: fixed; bottom: 10px; right: 20px;">
         <!-- todo, need this to interact with particle container -->
@@ -62,29 +91,49 @@ https://chatgpt.com/share/68671f16-dca8-800a-beed-cbec952f1b3b
             <a class="link" href="https://github.com/Core310" target="_blank">Github</a>
             <a class="link" href="https://www.linkedin.com/in/arikakhor/" target="_blank">Linkedin</a>
         </div>
-        <aside class="status typer-component" style="position: fixed; bottom: 10px; left: 20px;">Email: arikak@ou.edu
+        <aside class="status typer-component" style="position: fixed; bottom: 10px; left: 20px;">Email:
+            <a class="link" href="mailto:arikak@ou.edu" target="_blank">arikak@ou.edu</a>
         </aside>
     </footer>
 </div>
 
 
-<!-- Google tag (gtag.js) -->
+<!-- New Google tag (gtag.js) so I can c user visits  -->
+<!--Check here: https://tagmanager.google.com/?authuser=1#/container/accounts/6269033108/containers/206275102/workspaces/0/config
+if it breaks
+See analytics.google for stats
+
+-->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7F6K1TLJC1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-7F6K1TLJC1');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-7F6K1TLJC1');
 </script>
+
+
 <!-- particles.js container -->
 <div id="particles-js"></div>
-<!--Particles.js has issues with edge (maybe all). The footer isn't loading particles anymore, not sure why.. (Went pretty far back and it was like this the whole time.-->
 
 <!-- Particles scripts -->
 <script src="particles/particles.js"></script>
 <script src="particles/app.js"></script>
 
 <script src="textScramWelcome/tscarmSlow.js"></script>
+<script src="main.js"></script>
+<!--Anime js load-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+<script type="module">
+    const {animate} = anime;
+</script>
+
+
 </body>
 </html>

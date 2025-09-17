@@ -28,6 +28,12 @@
     filter: alpha(opacity=75)
 }
 
+.footer-component .status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
 .footer-component .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -43,4 +49,14 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=66)";
     filter: alpha(opacity=66);
     color: #e2e6e8
+}
+
+.footer-component .status .link {
+    -webkit-transition: opacity .3s cubic-bezier(.23,1,.32,1);
+    transition: opacity .3s cubic-bezier(.23,1,.32,1);
+    margin-left: 8px;
+    text-decoration: none;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=66)";
+    filter: alpha(opacity=66);
 }

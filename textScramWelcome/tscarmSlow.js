@@ -92,9 +92,10 @@ const introPhrases = [
     'Suilië',
 ]
 
-const bodPhrases = "I'm Arika, a Robotics Researcher at The University of Oklahoma and am" +
-    " currently working on 3d tomographic path planning on UGVs" +
-    " at the Construction Innovation and Analytics Lab and Sooner Competitive Robotics Team." /*TODO how to get this to not overflow?*!*/
+const bodPhrases = "" +
+    "I'm Arika, a robotics student at The University of Oklahoma." +
+    " I'm currently working on a passive reinforcement learning model for navigation on streets (AIROU), autonomous waypoint navigation through dynamic construction sites (CinnaLAB), and " +
+    "trajectory generation for omni-directional wheels (SCR)"
 
 const bod = document.querySelector('.WelcomeText')
 const fx_bod = new TextScramble(bod)
