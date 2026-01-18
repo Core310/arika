@@ -95,7 +95,8 @@ const introPhrases = [
 const bodPhrases = "" +
     "I'm Arika, a robotics student at The University of Oklahoma." +
     " I'm currently working on a passive reinforcement learning model for navigation on streets (AIROU), autonomous waypoint navigation through dynamic construction sites (CinnaLAB), and " +
-    "trajectory generation for omni-directional wheels (SCR)"
+    "trajectory generation for omni-directional wheels (SCR)." +
+    "I'm also a volunteer barista at secondwind and a coffee enthusiast."
 
 const bod = document.querySelector('.WelcomeText')
 const fx_bod = new TextScramble(bod)
