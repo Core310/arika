@@ -93,10 +93,11 @@ const introPhrases = [
 ]
 
 const bodPhrases = "" +
-    "I'm Arika, a robotics student at The University of Oklahoma." +
-    " I'm currently working on a passive reinforcement learning model for navigation on streets (AIROU), autonomous waypoint navigation through dynamic construction sites (CinnaLAB), and " +
-    "trajectory generation for omni-directional wheels (SCR)." +
-    "I'm also a volunteer barista at secondwind and a coffee enthusiast."
+    "I'm Arika, currently doing my CS BS/MS @ The University of Oklahoma." +
+    " My current projects include: a smart intersection using Multi-agent reinforcement learning in isaac sim (AIROU), " +
+    "autonomous waypoint navigation through dynamic construction sites (CinnaLAB), and " +
+    "digital facial recognition poisoning (thesis)." +
+    "\n I'm also a volunteer barista at secondwind coffee, a coffee enthusiast, and rock climber."
 
 const bod = document.querySelector('.WelcomeText')
 const fx_bod = new TextScramble(bod)
@@ -115,6 +116,7 @@ const next = () => {/*todo get introPhrases to load then bodPhrases so its a con
         tmp = Math.random() * introPhrases.length | 0;
 
     counter = tmp
+
     prevCounter === 2 ? (prevCounter = 0, prev = counter) : ++prevCounter
 
 
